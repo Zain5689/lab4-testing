@@ -10,7 +10,7 @@ const About = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-[200px] p-8 bg-gray-50 rounded-xl border border-gray-200 shadow-sm transition-all">
+    <div className="flex flex-col items-center justify-center min-h-50 p-8 bg-gray-50 rounded-xl border border-gray-200 shadow-sm transition-all">
       <h1 className="text-3xl font-bold text-gray-800 mb-6">About Us</h1>
 
       <button
@@ -23,7 +23,7 @@ const About = () => {
       <div className="h-10 mt-6">
         {showCount && (
           <p className="text-lg font-semibold text-gray-600 animate-in fade-in slide-in-from-top-2 duration-300">
-            Current Count:{" "}
+            <p className="...">Current Count: {count}</p>
             <span className="text-blue-600 text-xl">{count}</span>
           </p>
         )}
