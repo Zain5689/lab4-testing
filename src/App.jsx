@@ -1,15 +1,15 @@
-import { Button } from "@/components/ui/button";
-import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+
 function App() {
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <div className="space-x-4">
-        <Button>Click Me</Button>
-        <Button variant="outline">Outline Button</Button>
-        <Button variant="destructive">Delete</Button>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </div>
   );
 }
-
 export default App;
